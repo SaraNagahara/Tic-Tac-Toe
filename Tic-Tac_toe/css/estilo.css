@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+h6{
+    display: none;
+}
+
+#jogo{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px;
+    margin-bottom: 0px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+figure{
+    margin-left: 250%;
+    margin-top: 50px;
+    width: 100%;
+}
+
+figcaption{
+    width: 100%;
+    margin-left: 70%;
+    font-family: "Press Start 2P", serif;
+    font-weight: none;
+    font-style: normal;
+    font-size: 8px;
+}
+
+html{
+    background-color: #BFECFF;
+}
+
+h1{
+    font-family: "Press Start 2P", serif;
+    font-weight: none;
+    font-style: normal;
+}
+
+button{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border: none;
+    background-color: #FFE3E3;
+}
+
+button:hover{
+    background-color: #FEF9F2;
+}
+
+#button-1{
+   border-right: 1px solid black;
+   border-bottom: 1px solid black;
+}
+
+#button-2{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#button-3{
+    border-bottom: 1px solid black;
+}
+
+
+#button-4{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+
+#button-5{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#button-6{
+    border-bottom: 1px solid black;
+}
+
+#button-7{
+    border-right: 1px solid black;
+}
+
+#button-8{
+    border-right: 1px solid black;
+}
+
+input{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(248, 66, 66);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+footer{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+
+.no-hover:hover {
+    background-color: #FFE3E3 !important;
+    color: inherit !important;
+    cursor: default !important;
+}
+
+#text{
+    color: #FB9EC6;
+    background-color: #ffffff;
+    font-family: "Press Start 2P", serif;
+    font-style: normal;
+    font-size: 14px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+}
+
+
+#credit-paragraph{
+    margin-top: 100%;
+}
+
+
+
