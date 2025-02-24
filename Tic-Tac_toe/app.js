@@ -26,9 +26,9 @@ botoes.forEach((botao, index) => {   /* Seleção de todos os buttons da pagina 
         let img = document.createElement("img"); /* Cria um elemento img dentro dos buttons apenas quando houver um click apartir da função acima */
 
 
-        if (texto.textContent === "X Player Turn!") {
+        if (texto.textContent.includes("X")) /*Verifica se há a letra X no texto, porque se não não funciona caso o site seja traduzido */{
             img.src = "imagens/imagemX.png";
-            texto.textContent = "O Player Turn!";
+            texto.textContent = "0 Player Turn!";
             texto.style.color = "#d69ade";
             xArray.push(numeros[index]); // Armazena o número no array do jogador X
 
@@ -61,7 +61,7 @@ botoes.forEach((botao, index) => {   /* Seleção de todos os buttons da pagina 
             oArray.push(numeros[index]); // Armazena o número no array do jogador O
 
             if (CombinacaoVencedora.some(combination => combination.every(num => oArray.includes(num)))) {
-                texto.textContent = "O Won!";
+                texto.textContent = "0 Won!";
                 texto.style.color = "green";
 
                 botoes.forEach(botao => {  
@@ -82,3 +82,13 @@ let recomecar = document.querySelector('input');
 recomecar.addEventListener("click", function(){
     location.reload();
 });
+
+
+//Tradução para todos os idiomas
+
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      { pageLanguage: 'en', includedLanguages: 'es,fr,de,pt,ja,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+      'google_translate_element'
+    );
+  }
