@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+
+#gatinho, #cat-fig {
+    display: none;
+}
+
 h6{
     display: none;
 }
@@ -20,13 +25,13 @@ body{
 
 
 
-figure{
+.figure-cat{
     margin-left: 250%;
     margin-top: 50px;
     width: 100%;
 }
 
-figcaption{
+.cat-fig{
     width: 100%;
     margin-left: 70%;
     font-family: "Press Start 2P", serif;
@@ -131,6 +136,38 @@ footer{
 
 #credit-paragraph{
     margin-top: 100%;
+}
+
+@media screen and (max-width: 541px){
+    .gatinho, .cat-fig{
+        display: none;
+    }
+
+    #gatinho, #cat-fig {
+        display: block;
+        align-items: flex-start;
+    }
+
+    #cat-fig{
+        font-family: "Press Start 2P", serif;
+        font-weight: none;
+        font-style: normal;
+        font-size: 8px;
+        text-align: center;
+    }
+
+    #gatinho{
+        margin-top: 10%;
+    }
+
+    #credit-paragraph{
+        margin-top: 15%;
+    }
+
+    h1{
+        font-size: 1.4em;
+    }
+    
 }
 
 
